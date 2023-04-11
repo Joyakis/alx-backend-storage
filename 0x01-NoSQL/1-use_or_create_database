@@ -1,2 +1,8 @@
 // Creates or uses the database my_db
-use my_db;
+#!/bin/bash
+
+# Connect to MongoDB and switch to the my_db database
+mongo my_db --eval "db"
+
+# Close the MongoDB connection
+mongo --eval "quit()"
